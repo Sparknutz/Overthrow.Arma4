@@ -1,0 +1,10 @@
+GenericEntity {
+ ID "65475ADAE2B45D1A"
+ components {
+  SCR_ScenarioFrameworkLayerBase "{65475ADAE2B45D1E}" {
+  }
+  Hierarchy "{65475ADAE2B45DE5}" {
+  }
+ }
+ coords 1738.521 39.011 2864.114
+}

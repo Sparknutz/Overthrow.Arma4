@@ -1,0 +1,278 @@
+FrameWidgetClass {
+  Name "rootFrame"
+  {
+    OverlayWidgetClass {
+      Name "Content"
+      {
+        ImageWidgetClass {
+          Name "Background"
+          Position 0 0
+          Size 800 600
+          Color 0.2 0.2 0.2 1
+        }
+        UniformGridLayoutWidgetClass {
+          Name "ItemGrid"
+          Position 50 50
+          Size 400 400
+          Columns 3
+          Rows 3
+          {
+            ButtonWidgetClass {
+              Name "Item0"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage0"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName0"
+                Position 10 90
+                Size 100 20
+                Text "Item 0"
+              }
+              TextWidgetClass {
+                Name "ItemPrice0"
+                Position 10 110
+                Size 100 20
+                Text "$10"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item1"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage1"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName1"
+                Position 10 90
+                Size 100 20
+                Text "Item 1"
+              }
+              TextWidgetClass {
+                Name "ItemPrice1"
+                Position 10 110
+                Size 100 20
+                Text "$20"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item2"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage2"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName2"
+                Position 10 90
+                Size 100 20
+                Text "Item 2"
+              }
+              TextWidgetClass {
+                Name "ItemPrice2"
+                Position 10 110
+                Size 100 20
+                Text "$30"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item3"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage3"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName3"
+                Position 10 90
+                Size 100 20
+                Text "Item 3"
+              }
+              TextWidgetClass {
+                Name "ItemPrice3"
+                Position 10 110
+                Size 100 20
+                Text "$40"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item4"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage4"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName4"
+                Position 10 90
+                Size 100 20
+                Text "Item 4"
+              }
+              TextWidgetClass {
+                Name "ItemPrice4"
+                Position 10 110
+                Size 100 20
+                Text "$50"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item5"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage5"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName5"
+                Position 10 90
+                Size 100 20
+                Text "Item 5"
+              }
+              TextWidgetClass {
+                Name "ItemPrice5"
+                Position 10 110
+                Size 100 20
+                Text "$60"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item6"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage6"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName6"
+                Position 10 90
+                Size 100 20
+                Text "Item 6"
+              }
+              TextWidgetClass {
+                Name "ItemPrice6"
+                Position 10 110
+                Size 100 20
+                Text "$70"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item7"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage7"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName7"
+                Position 10 90
+                Size 100 20
+                Text "Item 7"
+              }
+              TextWidgetClass {
+                Name "ItemPrice7"
+                Position 10 110
+                Size 100 20
+                Text "$80"
+              }
+            }
+            ButtonWidgetClass {
+              Name "Item8"
+              Size 120 120
+              ImageWidgetClass {
+                Name "ItemImage8"
+                Position 10 10
+                Size 100 80
+              }
+              TextWidgetClass {
+                Name "ItemName8"
+                Position 10 90
+                Size 100 20
+                Text "Item 8"
+              }
+              TextWidgetClass {
+                Name "ItemPrice8"
+                Position 10 110
+                Size 100 20
+                Text "$90"
+              }
+            }
+          }
+        }
+        HorizontalLayoutWidgetClass {
+          Name "Navigation"
+          Position 50 460
+          Size 400 40
+          {
+            ButtonWidgetClass {
+              Name "PrevPage"
+              Size 100 40
+              Text "Previous"
+            }
+            ButtonWidgetClass {
+              Name "NextPage"
+              Size 100 40
+              Text "Next"
+            }
+          }
+        }
+      }
+    }
+    OverlayWidgetClass {
+      Name "Details"
+      Position 460 50
+      Size 300 400
+      {
+        VerticalLayoutWidgetClass {
+          Name "DetailLayout"
+          {
+            TextWidgetClass {
+              Name "SelectedItemName"
+              Position 10 10
+              Size 280 30
+              Text "Selected Item"
+            }
+            TextWidgetClass {
+              Name "SelectedItemDescription"
+              Position 10 50
+              Size 280 100
+              Text "Item Description"
+            }
+            TextWidgetClass {
+              Name "SelectedItemPrice"
+              Position 10 160
+              Size 280 30
+              Text "Price: $0"
+            }
+            HorizontalLayoutWidgetClass {
+              Name "ActionButtons"
+              Position 10 200
+              Size 280 40
+              {
+                ButtonWidgetClass {
+                  Name "BuyButton"
+                  Size 100 40
+                  Text "Buy"
+                }
+                ButtonWidgetClass {
+                  Name "CloseButton"
+                  Size 100 40
+                  Text "Close"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

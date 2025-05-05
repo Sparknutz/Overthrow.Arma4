@@ -57,8 +57,15 @@ class OVT_ShopContext : OVT_UIContext
 		btn = SCR_InputButtonComponent.Cast(closeButton.FindHandler(SCR_InputButtonComponent));		
 		btn.m_OnActivated.Insert(CloseLayout);
 		
+		
 		Refresh();		
 	}
+	
+	// Handle inventory updates
+    protected void OnInventoryChanged()
+    {
+        Refresh();
+    }
 	
 	// Helper function to determine sell button visibility
 	private bool ShouldShowSellButton(OVT_ShopType shopType)
@@ -323,6 +330,8 @@ class OVT_ShopContext : OVT_UIContext
 		
 		OVT_Global.GetServer().Buy(m_Shop, m_SelectedResource, 1, m_iPlayerID);	
 		SelectItem(m_SelectedResourceName);
+		// SPARK EDIT: Refresh shop after transaction to display money and stock properly
+		GetGame().GetCallqueue().CallLater(Refresh, 100); // Added a small delay to ensure data is updated
 	}
 	
 	void Sell(Widget src, float value = 1, EActionTrigger reason = EActionTrigger.DOWN)
@@ -372,15 +381,19 @@ class OVT_ShopContext : OVT_UIContext
 					m_Economy.AddPlayerMoney(m_iPlayerID, cost, true);
 					m_Shop.AddToInventory(m_SelectedResource, 1);
 					SelectItem(m_SelectedResourceName);
+					// SPARK EDIT: Refresh shop after transaction to display money and stock properly
+					GetGame().GetCallqueue().CallLater(Refresh, 100);
 					break;
 				}
 			}
 		}
+		
 	}
 	
 	void ~OVT_ShopContext()
 	{
 		if(!m_Economy) return;
 		m_Economy.m_OnPlayerMoneyChanged.Remove(OnPlayerMoneyChanged);
+		
 	}
 }

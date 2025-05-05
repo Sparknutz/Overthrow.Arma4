@@ -1,0 +1,80 @@
+$grp GenericEntity : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" {
+ MorphineInjection_01_6542471A8B47BF5B {
+  coords 2135.306 5.628 1966.496
+ }
+ MorphineInjection_01_6542471A885669AE {
+  coords 2135.289 5.628 1966.286
+ }
+ MorphineInjection_01_6542471A895F616C {
+  coords 2135.536 5.628 1966.327
+ }
+ MorphineInjection_01_6542471A864BF47F {
+  coords 2135.52 5.628 1966.107
+ }
+ MorphineInjection_01_6542471A874C40A1 {
+  coords 2135.494 5.628 1965.861
+ }
+ MorphineInjection_01_6542471A844BE6CE {
+  coords 2135.192 5.628 1965.987
+ }
+}
+GenericEntity : "{108B2B2A04700231}Prefabs/Props/Furniture/ClockFloor_01.et" {
+ components {
+  ATMComponent "{654480F5E9A1C4CA}" {
+  }
+  ActionsManagerComponent "{654480F5AC40A91B}" {
+   ActionContexts {
+    UserActionContext "{654480F5A6FFDBC8}" {
+     UIInfo UIInfo "{654480F5A5345EE4}" {
+     }
+     Position PointInfo "{654480F5420D947B}" {
+     }
+    }
+   }
+  }
+ }
+ coords 2133.408 4.576 1971.48
+}
+GenericEntity : "{4F82C19898F3D79F}Prefabs/World/Locations/Eden/Urban/Map_Marker.et" {
+ components {
+  SCR_EditableCommentComponent "{529AB059519FE609}" {
+   Enabled 0
+   m_UIInfo SCR_EditableCommentUIInfo "{5298E609432D192D}" {
+    Name "TESTING 1"
+    Description "Testing 123"
+   }
+   m_sColor 0.672 0 0 1
+   m_fSizeCoef 1
+  }
+  SCR_MapDescriptorComponent "{527892B6ED748CEB}" {
+   Enabled 0
+   DisplayName "TESTING 1"
+   MainType Target
+  }
+ }
+ coords 2149.718 11.283 1897.382
+}
+GenericEntity Area1 : "{F647DB0267FE7487}Prefabs/Systems/ScenarioFramework/Components/Area.et" {
+ coords 2148.106 9.532 1906.828
+ {
+  GenericEntity Layer1 : "{DF66FB8DD03D6B01}Prefabs/Systems/ScenarioFramework/Components/Layer.et" {
+   coords 0 0 0
+   {
+    GenericEntity SlotMarker1 : "{A764B0C2259CE23A}Prefabs/Systems/ScenarioFramework/Components/SlotMarker.et" {
+     components {
+      SCR_ScenarioFrameworkSlotMarker "{65475ADAF983B95B}" {
+       m_bCanBeGarbageCollected 0
+       m_MapMarkerType SCR_ScenarioFrameworkMarkerCustom "{65475ADA58D8D5D2}" {
+        m_sMapMarkerText "TEST 1234"
+        m_eMapMarkerIcon OBSERVATION_POST
+        m_eMapMarkerColor RED
+       }
+      }
+     }
+     Flags 1027
+     coords 0 14.518 -225.886
+    }
+   }
+  }
+ }
+}

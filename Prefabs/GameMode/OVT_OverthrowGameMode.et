@@ -22,6 +22,8 @@ OVT_OverthrowGameMode {
      }
      OVT_ConfigSaveDataClass "{5D9E53AFE550A24E}" {
      }
+     SPARK_WalletComponentSaveDataClass "{653A72E38AFC2768}" {
+     }
     }
    }
   }
@@ -205,6 +207,10 @@ OVT_OverthrowGameMode {
    }
    m_pPlayerGroupPrefab "{9BED5CCD52C87E26}Prefabs/Groups/INDFOR/Group_Player.et"
    m_CivilianLoadout OVT_LoadoutConfig "{61C8AC0BB681EDAF}" : "{AB39AD8BD8554967}Configs/Civilians/CivilianClothes.conf" {
+    m_aSlots {
+     OVT_LoadoutSlot "{61C8AC0AA30F35F3}" {
+     }
+    }
    }
    m_bDebugMode 0
   }
@@ -373,8 +379,8 @@ OVT_OverthrowGameMode {
    Streamable Disabled
   }
  }
- coords 208.286 1.001 116.919
  Flags 0
+ coords 208.286 1.001 116.919
  m_bAutoPlayerRespawn 0
  m_StartGameUIContext OVT_StartGameContext "{599D315949D3D5D0}" {
   m_Layout "{4A7A8EED9F6F2A92}UI/Layouts/Menu/StartGameMenu.layout"

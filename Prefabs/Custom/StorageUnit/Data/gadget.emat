@@ -1,0 +1,32 @@
+MatPBRBasic {
+ Color 1 1 1 1
+ Emissive 1 1 1 1
+ EmissiveLV 5
+ SpecularMul 1
+ AlphaTest 0
+ AlphaMul 1
+ BlendMode None
+ RoughnessScale 1
+ MetalnessScale 1
+ EmissiveMap "{088ABF73E3047B65}Prefabs/Custom/Sellables/StorageUnit/Data/present_100_gadget_low_gadget_Emissive.edds"
+ BCRMap "{AADB621348C298AC}Prefabs/Custom/Sellables/StorageUnit/Data/present_100_gadget_low_gadget_BaseColor.edds"
+ OpacityMap "{088ABF73E3047B65}Prefabs/Custom/Sellables/StorageUnit/Data/present_100_gadget_low_gadget_Emissive.edds"
+ NormalPower 3
+ NMOMap "{B142E195A8BC0F11}Prefabs/Custom/Sellables/StorageUnit/Data/present_100_gadget_low_gadget_Metallic.edds"
+ GlobalMapsUVTransform MatUVTransform "{64F258AD67553767}" {
+  TilingU 1
+  TilingV 1
+  OffsetU 0
+  OffsetV 0
+  Rotation 0
+ }
+ DetailNormalPower 0
+ DetailNormalMap "{96909AC3C68568EC}Prefabs/Custom/Sellables/StorageUnit/Data/present_100_gadget_low_gadget_Normal.edds"
+ DetailNormalMapUVTransform MatUVTransform "{64F258AD67553F52}" {
+  TilingU 1
+  TilingV 1
+  OffsetU 0
+  OffsetV 0
+  Rotation 0
+ }
+}

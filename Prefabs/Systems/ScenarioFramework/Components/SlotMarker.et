@@ -1,0 +1,11 @@
+GenericEntity {
+ ID "65475ADAF983B950"
+ components {
+  SCR_ScenarioFrameworkSlotMarker "{65475ADAF983B95B}" {
+   m_bShowDebugShapesInWorkbench 1
+  }
+  Hierarchy "{65475ADAF983B926}" {
+  }
+ }
+ coords 76.117 4.856 45.771
+}

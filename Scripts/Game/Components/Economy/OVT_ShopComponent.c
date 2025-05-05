@@ -34,12 +34,14 @@ class OVT_ShopComponent: OVT_Component
 	
 	void AddToInventory(int id, int num)
 	{
-		OVT_Global.GetServer().AddToShopInventory(this, id, num);		
+		OVT_Global.GetServer().AddToShopInventory(this, id, num);	
+			
 	}
 	
 	void TakeFromInventory(int id, int num)
 	{		
 		OVT_Global.GetServer().TakeFromShopInventory(this, id, num);
+		
 	}
 	
 	void HandleNPCSale(int id, int num)

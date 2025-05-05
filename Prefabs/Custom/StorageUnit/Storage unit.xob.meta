@@ -1,0 +1,52 @@
+MetaFileClass {
+ Name "{A888D5F8AE926DD7}Prefabs/Custom/Sellables/StorageUnit/Storage unit.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{64F258ADACFCAF0B}" {
+     SourceMaterial "gadget"
+     AssignedMaterial "{937F0EA4FFC0E0AE}Prefabs/Custom/Sellables/StorageUnit/Data/gadget.emat"
+    }
+   }
+   MeshParams {
+    MeshParam "gadget.001_low" {
+    }
+    MeshParam "gadget.002_low" {
+    }
+    MeshParam "gadget.003_low" {
+    }
+    MeshParam "gadget.004_low" {
+    }
+    MeshParam "gadget.005_low" {
+    }
+    MeshParam "gadget.006_low" {
+    }
+    MeshParam "gadget.007_low" {
+    }
+    MeshParam "gadget.008_low" {
+    }
+    MeshParam gadget_low {
+    }
+   }
+   GeometryParams {
+    GeometryParam "UBX_gadget.001_low" {
+     SurfaceProperties {
+      "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

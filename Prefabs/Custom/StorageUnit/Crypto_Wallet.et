@@ -1,0 +1,74 @@
+GenericEntity {
+ ID "64F258EE2ACE94AF"
+ components {
+  EPF_PersistenceComponent "{64F258EE2ACE94B9}" {
+   m_pSaveData EPF_ItemSaveDataClass "{64F258EE2ACE948D}" {
+    m_aComponents {
+     SPARK_WalletComponentSaveDataClass "{653A72E3967DB1CA}" {
+     }
+    }
+   }
+  }
+  InventoryItemComponent "{64F258EE2ACE9482}" {
+   Attributes SCR_ItemAttributeCollection "{64F258EE2ACE9499}" {
+    ItemDisplayName UIInfo "{64F258EE2ACE949A}" {
+     Name "Crypto Wallet"
+     Description "Very Valuable: Cold Storage for Bitcoin"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{64F258EE2ACE949E}" {
+     Weight 0.01
+     SizeSetupStrategy Manual
+     ItemDimensions 0.5 0.5 0.5
+     ItemVolume 1
+     RestingAdditiveRotationLS 0 0 0
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{64F258EE2ACE9495}" {
+      CameraPreset Top
+     }
+    }
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bRefundable 0
+   }
+  }
+  MeshObject "{64F258EE2ACE946A}" {
+   Object "{A888D5F8AE926DD7}Prefabs/Custom/StorageUnit/Storage unit.xob"
+  }
+  RigidBody "{64F258EE2ACE9463}" {
+   ModelGeometry 1
+   Static 1
+  }
+  WalletComponent "{653A7270E1FBD6C9}" {
+  }
+  ActionsManagerComponent "{64F258EE2ACE9464}" {
+   ActionContexts {
+    UserActionContext "{64F258EE2ACE9478}" {
+     UIInfo UIInfo "{64F258EE2ACE947A}" {
+      Name "default"
+     }
+     ContextName "default"
+     Position PointInfo "{64F258EE2ACE947F}" {
+     }
+     Radius 0.6
+     Height 0
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{64F258EE2ACE9443}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{64F258EE2ACE9444}" {
+      Name "Crypto Wallet"
+     }
+    }
+   }
+  }
+  RplComponent "{64F258EE2ACE9458}" {
+   "Parent Node From Parent Entity" 0
+  }
+ }
+ Flags 4194307
+ coords 2.376 2.952 3.088
+}

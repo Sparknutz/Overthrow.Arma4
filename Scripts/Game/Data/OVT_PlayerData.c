@@ -9,8 +9,10 @@ class OVT_PlayerData : Managed
 	//Persisted
 	string name="";	
 	vector home="0 0 0";
-	vector camp="0 0 0";	
-	int money = 0;
+	vector camp="0 0 0";
+	//SPARK EDIT	
+	//int money = 0;
+	//SPARK EDIT
 	bool initialized = false;	
 	bool isOfficer = false;
 	
